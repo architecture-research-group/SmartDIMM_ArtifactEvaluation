@@ -43,6 +43,7 @@ To ease reproducibility for our artifact evaluators we have provided on-premise 
 
 #### Generating Sensitivity Analysis Figures
 
+
 ### Nginx Workload Experiments
 * Corresponds to figures 11 and 12 in [SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact](https://www.hpca-conf.org/2024)<br>
 
