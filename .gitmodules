@@ -1,0 +1,3 @@
+[submodule "wrk_offloadenginesupport"]
+	path = wrk_offloadenginesupport
+	url = git@github.com:neel-patel-1/SmartDIMM_Client_Server_Workloads.git
