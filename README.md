@@ -57,6 +57,12 @@ from the paper will be executed. For more information, refer to [`SmartDIMM:  In
 	* Create a cloudlab account if needed
 	* Navigate to `Experiments`, then `Create Experiment Profile`, and upload `nginx_workload.profile`
 
+
+* As resource availability of nodes on the `Clemson` cluster equipped with Mellanox Bluefield 2 SmartNICs cannot be guaranteed ***we provide separate instructions for our artifact evaluators below***.
+
 #### Artifact Evaluation Instructions:
 To ease reproducibility for our artifact evaluators we have provided on-premise access to the servers used to generate the original nginx workload results from the HPCA 2024 paper `SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact`
+* temporary access to the AxDIMM FPGA Testbench used for conducting sensitivity analysis has been provided to the Artifact Evaluators
+* to expedite result generation, pre-built versions of the nginx builds and workload generators have been provided on the
+workload generation and DUT servers
 * please reach out to the authors if there are any further questions regarding accessing our on-premise hosts
