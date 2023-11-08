@@ -31,10 +31,11 @@ To ease reproducibility for our artifact evaluators we have provided on-premise 
 #### Logging in to the Workload Generator (Castor)
 *
 
-#### Arming the ILAs:
-
-#### Logging in to AxDIMM (SmartDIMM Testbench):
-*
+#### Logging in to AxDIMM (SmartDIMM Testbench) and Arming the ILAs:
+In order to login into the server and arm the ILA you will need to run the following script with proper arguments
+```
+./logInAndArm.sh FolderName FileName LLC-Ways [Reset (optional)]
+```
 
 #### Starting Workload Generation:
 * Initiates `ComputeCopy` Threads performing memcpy's to/from the AxDIMM's registered address space
@@ -42,6 +43,7 @@ To ease reproducibility for our artifact evaluators we have provided on-premise 
 ```
 
 #### Generating Sensitivity Analysis Figures
+
 
 
 ### Nginx Workload Experiments
