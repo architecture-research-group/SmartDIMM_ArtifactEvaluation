@@ -53,7 +53,6 @@ cd wrk_offloadenginesupport
 make all
 ```
 
-
 ### Artifact Evaluation Instructions:
 To ease reproducibility for our artifact evaluators we have provided on-premise access to the servers used to generate the original nginx workload results from the HPCA 2024 paper `SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact`
 * temporary access to the AxDIMM FPGA Testbench used for conducting sensitivity analysis has been provided to the Artifact Evaluators
@@ -64,17 +63,19 @@ workload generation and DUT servers
 #### SmartDIMM Sensitivity Analysis
 * Corresponds to figure 10 in [SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact](https://www.hpca-conf.org/2024)<br>
 
-
 ##### Logging in to the Workload Generator (Castor)
-* 
+*
 
-##### Arming the ILAs:
-
-##### Logging in to AxDIMM (SmartDIMM Testbench):
-* 
+##### Logging in to AxDIMM (SmartDIMM Testbench) and Arming the ILAs:
+In order to login into the server and arm the ILA you will need to run the following script with proper arguments
+```
+./logInAndArm.sh FolderName FileName LLC-Ways [Reset (optional)]
+```
 
 ##### Starting Workload Generation:
 * Initiates `ComputeCopy` Threads performing memcpy's to/from the AxDIMM's registered address space
+```
+```
 
 ##### Generating Sensitivity Analysis Figures
 
@@ -82,8 +83,8 @@ workload generation and DUT servers
 #### Nginx Workload Experiments
 * Corresponds to figures 11 and 12 in [SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact](https://www.hpca-conf.org/2024)<br>
 
-##### Logging in to the Workload Generator (Castor)
+###### Logging in to the Workload Generator (Castor)
 * After logging in, follow instructions in the README.md of `wrk_offloadenginesupport`
 
-##### Logging in to the DUT (Pollux)
+###### Logging in to the DUT (Pollux)
 * After logging in, follow instructions in the README.md of `wrk_offloadenginesupport/async_nginx_build`
