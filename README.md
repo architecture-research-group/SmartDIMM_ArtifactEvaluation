@@ -60,6 +60,14 @@ To ease reproducibility for our artifact evaluators we have provided on-premise 
 workload generation and DUT servers
 * please reach out to the authors if there are any further questions regarding accessing our on-premise hosts
 
+#### Nginx Workload Experiments
+* Corresponds to figures 11 and 12 in [SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact](https://www.hpca-conf.org/2024)<br>
+
+###### Logging in to the Workload Generator (Castor)
+* `ssh sgupta@castor.ittc.ku.edu`
+* Credentials provided via hpca2024 AE site
+* After logging in, follow ***Artifact Evaluation*** instructions in the README.md of `/home/n869p538/wrk_offloadenginesupport`
+
 #### SmartDIMM Sensitivity Analysis
 * Corresponds to figure 10 in [SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact](https://www.hpca-conf.org/2024)<br>
 
@@ -68,7 +76,7 @@ workload generation and DUT servers
 
 ```
 # Access pollux (Control PC) via SSH
-ssh UserName@pollux             
+ssh sgupta@pollux             
 
 # Navigate to the programFPGA directory
 cd programFPGA
@@ -81,31 +89,20 @@ cd programFPGA
 * Initiates `ComputeCopy` Threads performing memcpy's to/from the AxDIMM's registered address space
 ```
 # Access axdimm via SSH
-ssh UserName@axdimm             
+ssh sgupta@axdimm             
 
-# Navigate to the ? directory
-cd ?
+# Navigate to the test directory
+cd /home/a972m888/ArtifactEvalHPCA/axdimm_scripts/antagonist_testing
 
 # Execute the test.sh script 
-./test.sh  
+./antagonist.sh
 ```
 
 ##### Generating Sensitivity Analysis Figures
 * Lastly, parse the collected CSV files and generate plots using the following commands:
 ```
-# Navigate to the ? directory
-cd ?
+# Navigate to the `FolderName` directory specified in 
+cd /path/to/FolderName
 
 python3 fig10Plot.py  
 ```
-
-
-
-#### Nginx Workload Experiments
-* Corresponds to figures 11 and 12 in [SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact](https://www.hpca-conf.org/2024)<br>
-
-###### Logging in to the Workload Generator (Castor)
-* After logging in, follow instructions in the README.md of `wrk_offloadenginesupport`
-
-###### Logging in to the DUT (Pollux)
-* After logging in, follow instructions in the README.md of `wrk_offloadenginesupport/async_nginx_build`
