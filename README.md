@@ -57,8 +57,28 @@ make all
 To ease reproducibility for our artifact evaluators we have provided on-premise access to the servers used to generate the original nginx workload results from the HPCA 2024 paper `SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact`
 * temporary access to the AxDIMM FPGA Testbench used for conducting sensitivity analysis has been provided to the Artifact Evaluators
 * to expedite result generation, pre-built versions of the nginx builds and workload generators have been provided on the
-workload generation and DUT servers
+workload generation and DUT servers (castor and pollux)
+
+Acquiring Credentials:
+* please ***reach out to the authors over the `hpca2024ae hotcrp` site  to retrieve VPN access and credentials*** to access the aforementioned servers (username: sgupta pass: ***provided upon request*** )
+
+Connecting to the VPN:
+* the [Cisco AnyConnect VPN client](https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client-v4-x/model.html#~tab-downloads) is used to gain internal access to the network on which the servers can be accessed
+(1) Open the AnyConnect client once installation is complete.
+(2) Enter `kuanywhere.ku.edu` for the address.
+(3) Enter the Online ID and Password (acquired from HPCA2024 AE Chair Siddharth Gupta or the authors), leaving your group as default. 
+In the case that the account requires MFA (Multi-Factor Authentication), follow the MFA-specific step below
+(MFA) Install the [Duo Mobile authentication app](https://play.google.com/store/apps/details?id=com.duosecurity.duomobile&hl=en_US&gl=US&pli=1) and follow the [Duo mobile authentication first-time-setup instructions](https://kuit.service-now.com/kb?sys_kb_id=9d018174db43d744959e9434db961990&id=kb_article_view&sysparm_rank=1&sysparm_tsqueryId=b771cf641ba235104ccf337e034bcb3b)
+* Repeat Steps (2) and (3) above, but select "DuoAuthentication" from the Group dropdown in the Cisco Mobility Client and authenticate using one of the available authentication options under [Step 3](https://kuit.service-now.com/kb?id=kb_article_view&sysparm_article=KB0013837)
 * please reach out to the authors if there are any further questions regarding accessing our on-premise hosts
+
+Logging in to the servers can be performed over ssh one connected to the VPN:
+```sh
+ssh sgupta@castor.ittc.ku.edu
+ssh sgupta@pollux.ittc.ku.edu
+ssh sgupta@axdimm.ittc.ku.edu
+```
+* above commands provide access to the servers used throughout the subsequent steps
 
 #### Nginx Workload Experiments
 * Corresponds to figures 11 and 12 in [SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact](https://www.hpca-conf.org/2024)<br>
