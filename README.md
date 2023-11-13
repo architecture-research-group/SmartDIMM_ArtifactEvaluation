@@ -78,8 +78,8 @@ workload generation and DUT servers
 # Access pollux (Control PC) via SSH
 ssh sgupta@pollux             
 
-# Navigate to the programFPGA directory
-cd programFPGA
+# Navigate to the sensitivityAnalysis directory
+cd /home/sgupta/sensitivityAnalysis/vivadoScript
 
 # Execute the run.sh script with specified FolderName and FileName
 ./run.sh FolderName FileName 
@@ -92,9 +92,9 @@ cd programFPGA
 ssh sgupta@axdimm             
 
 # Navigate to the test directory
-cd /home/a972m888/ArtifactEvalHPCA/axdimm_scripts/antagonist_testing
+cd /home/sgupta/axdimm_scripts/antagonist_testing
 
-# Execute the test.sh script 
+# Execute the antagonist.sh script 
 ./antagonist.sh
 ```
 
@@ -102,7 +102,7 @@ cd /home/a972m888/ArtifactEvalHPCA/axdimm_scripts/antagonist_testing
 * Lastly, parse the collected CSV files and generate plots using the following commands:
 ```
 # Navigate to the `FolderName` directory specified in 
-cd /path/to/FolderName
+cd /home/sgupta/sensitivityAnalysis
 
-python3 fig10Plot.py  
+python3 emulation.py -csv PathToCSVFile  
 ```
