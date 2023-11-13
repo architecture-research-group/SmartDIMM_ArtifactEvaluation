@@ -63,21 +63,42 @@ workload generation and DUT servers
 #### SmartDIMM Sensitivity Analysis
 * Corresponds to figure 10 in [SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact](https://www.hpca-conf.org/2024)<br>
 
-##### Logging in to the Workload Generator (Castor)
-*
+##### FPGA Programming (Control PC)
+* To program the bit file onto the FPGA of the AXDIMM and activate the ILAs for result collection, follow these steps:
 
-##### Logging in to AxDIMM (SmartDIMM Testbench) and Arming the ILAs:
-In order to login into the server and arm the ILA you will need to run the following script with proper arguments
 ```
-./logInAndArm.sh FolderName FileName LLC-Ways [Reset (optional)]
+# Access pollux (Control PC) via SSH
+ssh UserName@pollux             
+
+# Navigate to the programFPGA directory
+cd programFPGA
+
+# Execute the run.sh script with specified FolderName and FileName
+./run.sh FolderName FileName 
 ```
 
 ##### Starting Workload Generation:
 * Initiates `ComputeCopy` Threads performing memcpy's to/from the AxDIMM's registered address space
 ```
+# Access axdimm via SSH
+ssh UserName@axdimm             
+
+# Navigate to the ? directory
+cd ?
+
+# Execute the test.sh script 
+./test.sh  
 ```
 
 ##### Generating Sensitivity Analysis Figures
+* Lastly, parse the collected CSV files and generate plots using the following commands:
+```
+# Navigate to the ? directory
+cd ?
+
+python3 fig10Plot.py  
+```
+
 
 
 #### Nginx Workload Experiments
