@@ -82,6 +82,7 @@ ssh sgupta@pollux
 cd /home/sgupta/sensitivityAnalysis/vivadoScript
 
 # Execute the run.sh script with specified FolderName and FileName
+source /tools/xilinx/Vivado/2019.2/settings64.sh
 ./run.sh FolderName FileName 
 ```
 
