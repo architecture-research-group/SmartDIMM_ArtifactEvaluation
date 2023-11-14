@@ -63,7 +63,7 @@ Acquiring Credentials:
 * please ***reach out to the authors over the `hpca2024ae hotcrp` site  to retrieve VPN access and credentials*** to access the aforementioned servers (username: sgupta pass: ***provided upon request*** )
 
 Connecting to the VPN:
-* the [Cisco AnyConnect VPN client](https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client-v4-x/model.html#~tab-downloads) is used to gain internal access to the network on which the servers can be accessed
+* the `Cisco AnyConnect VPN client` is used to gain internal access to the network on which the servers can be accessed (contact authors for .deb or windows installer)
 (1) Open the AnyConnect client once installation is complete.
 (2) Enter `kuanywhere.ku.edu` for the address.
 (3) Enter the Online ID and Password (acquired from HPCA2024 AE Chair Siddharth Gupta or the authors), leaving your group as default. 
