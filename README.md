@@ -115,8 +115,8 @@ ssh sgupta@axdimm
 # Navigate to the test directory
 cd /home/sgupta/axdimm_scripts/antagonist_testing
 
-# Execute the antagonist.sh script 
-./antagonist.sh
+# Execute the antagonist.sh alongside test.sh script 
+./antagonist.sh & ./test.sh
 ```
 
 ##### Generating Sensitivity Analysis Figures
@@ -125,5 +125,5 @@ cd /home/sgupta/axdimm_scripts/antagonist_testing
 # Navigate to the `FolderName` directory specified in 
 cd /home/sgupta/sensitivityAnalysis
 
-python3 emulation.py -csv PathToCSVFile  
+python3 emulation.py -csv PathToCSVFile-0 PathToCSVFile-1 PathToCSVFile-3  
 ```
