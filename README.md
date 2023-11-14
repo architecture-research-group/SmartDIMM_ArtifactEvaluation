@@ -60,10 +60,10 @@ To ease reproducibility for our artifact evaluators we have provided on-premise 
 workload generation and DUT servers (castor and pollux)
 
 Acquiring Credentials:
-* please ***reach out to the authors over the `hpca2024ae hotcrp` site  to retrieve VPN access and credentials*** to access the aforementioned servers (username: sgupta pass: ***provided upon request*** )
+* please ***reach out to the authors over the `hpca2024ae hotcrp` site  to retrieve VPN access and credentials*** to access the aforementioned servers (username: sgupta password: ***provided upon request by AE chairs or authors*** )
 
 Connecting to the VPN:
-* the `Cisco AnyConnect VPN client` is used to gain internal access to the network on which the servers can be accessed (contact authors for .deb or windows installer)
+* the [Cisco AnyConnect VPN client](https://drive.google.com/drive/folders/1mLl8bhqwmX3Okgn2Cl-WAQ09oenTv0bb) is used to gain internal access to the network on which the servers can be accessed (installers for Windows Linux and MacOS are provided at the link)
 (1) Open the AnyConnect client once installation is complete.
 (2) Enter `kuanywhere.ku.edu` for the address.
 (3) Enter the Online ID and Password (acquired from HPCA2024 AE Chair Siddharth Gupta or the authors), leaving your group as default. 
