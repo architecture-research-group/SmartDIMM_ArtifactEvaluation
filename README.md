@@ -115,8 +115,8 @@ ssh sgupta@axdimm
 # Navigate to the test directory
 cd /home/sgupta/axdimm_scripts/antagonist_testing
 
-# Execute the antagonist.sh script 
-./antagonist.sh
+# Execute the antagonist.sh alongside test.sh script 
+./antagonist.sh & ./test.sh
 ```
 
 ##### Generating Sensitivity Analysis Figures
