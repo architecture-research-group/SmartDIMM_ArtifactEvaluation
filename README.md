@@ -125,5 +125,5 @@ cd /home/sgupta/axdimm_scripts/antagonist_testing
 # Navigate to the `FolderName` directory specified in 
 cd /home/sgupta/sensitivityAnalysis
 
-python3 emulation.py -csv PathToCSVFile  
+python3 emulation.py -csv PathToCSVFile-0 PathToCSVFile-1 PathToCSVFile-3  
 ```
