@@ -100,7 +100,7 @@ ssh sgupta@axdimm.ittc.ku.edu
 
 ```
 # Access pollux (Control PC) via SSH
-ssh sgupta@pollux             
+ssh sgupta@pollux.ittc.ku.edu             
 
 # Navigate to the sensitivityAnalysis directory
 cd /home/sgupta/sensitivityAnalysis/vivadoScript
@@ -114,7 +114,7 @@ source /tools/xilinx/Vivado/2019.2/settings64.sh
 * Initiates `ComputeCopy` Threads performing memcpy's to/from the AxDIMM's registered address space
 ```
 # Access axdimm via SSH
-ssh sgupta@axdimm             
+ssh sgupta@axdimm.ittc.ku.edu           
 
 # Navigate to the test directory
 cd /home/sgupta/axdimm_scripts/antagonist_testing
