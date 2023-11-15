@@ -60,7 +60,11 @@ To ease reproducibility for our artifact evaluators we have provided on-premise 
 workload generation and DUT servers (castor and pollux)
 
 Acquiring Credentials:
-* please ***reach out to the authors over the `hpca2024ae hotcrp` site  to retrieve VPN access and credentials*** to access the aforementioned servers (username: sgupta password: ***provided upon request by AE chairs or authors*** )
+* please ***reach out over the `hpca2024ae hotcrp` site to coordinate with the authors and chair in order to retrieve VPN access and credentials*** for the aforementioned servers (username: sgupta password: ***provided upon request by AE chairs or authors*** )
+
+Creating an Online ID && Account:
+* Navigate to the [my\_identity](https://myidentity.ku.edu/setup/login) portal
+* use the provided emplid (from hotcrp) and provide DOB to set up challenge questions and a password. Once setup, let us know and the account will be added to the vpn pool for internal server access
 
 Connecting to the VPN:
 * the [Cisco AnyConnect VPN client](https://drive.google.com/drive/folders/1mLl8bhqwmX3Okgn2Cl-WAQ09oenTv0bb) is used to gain internal access to the network on which the servers can be accessed (installers for Windows Linux and MacOS are provided at the link)
