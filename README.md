@@ -54,7 +54,7 @@ make all
 ```
 
 ### Artifact Evaluation Instructions:
-1. Install Cisco AnyConnect VPN client. You can use the following link to request access to download the client for Mac, windows, or Linux. We will give you access immediately after your request.  <Link>
+1. Install Cisco AnyConnect VPN client. You can use the following [link](https://drive.google.com/drive/folders/1mLl8bhqwmX3Okgn2Cl-WAQ09oenTv0bb?usp=drive_link) to request access to download the client for Mac, windows, or Linux. We will give you access immediately after your request.
 2. Run Cisco AnyConnect client.
 3. Contact Siddharth Gupta at +41787296208 (siddharth.gupta3@huawei.com) and ask for a temporary password so you use it in the next step. We already talked to Siddharth and he kindly agreed to make himself available at the reviewer's request.
 4. Enter kuanywhere.ku.edu for the address, and hit "connect". 
@@ -66,7 +66,7 @@ Second Password: [The temporary password that Siddharth Gupta Provides]
 <img src="/Cisco_VPN_Connect_Instructions/connect.png" width=200/>
 6. Now you are connected to the VPN and should be able to SSH to the servers.
 
-Logging in to the servers can be performed over ssh one connected to the VPN:
+Logging in to the servers can be performed over ssh once connected to the VPN:
 ```sh
 ssh sgupta@castor.ittc.ku.edu
 ssh sgupta@pollux.ittc.ku.edu
@@ -76,6 +76,30 @@ ssh sgupta@axdimm.ittc.ku.edu
 
 #### Nginx Workload Experiments
 * Corresponds to figures 11 and 12 in [SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact](https://www.hpca-conf.org/2024)<br>
+
+```sh
+ssh sgupta@castor.ittc.ku.edu #login to workload generator
+cd /home/n869p538/wrk_offloadenginesupport
+source vars/env.src # set up environment variables
+
+source ${WRK_ROOT}/utils/tests/test_funcs.sh;
+compress_var_file_sizes # max RPS Compression test
+source ${WRK_ROOT}/utils/tests/parse_utils.sh;
+parse_many_multi_file_compress # parse results to stdout (Normalize to http-gzip configuration for RPS comparison in Fig. 12)
+cd ..
+
+compress_var_file_sizes_const # max RPS Compression test
+parse_many_multi_file_compress_const # parse results to stdout (Normalize to accel-gzip to http-gzip for RPS comparison)
+cd ..
+
+multi_many_file_var # max RPS test
+parse_many_multi_file
+cd ..
+
+multi_many_constrps_var_files # tls membw cpu test
+parse_many_multi_file_const
+cd ..
+```
 
 ###### Logging in to the Workload Generator (Castor)
 * `ssh sgupta@castor.ittc.ku.edu`
