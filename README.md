@@ -54,27 +54,16 @@ make all
 ```
 
 ### Artifact Evaluation Instructions:
-To ease reproducibility for our artifact evaluators we have provided on-premise access to the servers used to generate the original nginx workload results from the HPCA 2024 paper `SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact`
-* temporary access to the AxDIMM FPGA Testbench used for conducting sensitivity analysis has been provided to the Artifact Evaluators
-* to expedite result generation, pre-built versions of the nginx builds and workload generators have been provided on the
-workload generation and DUT servers (castor and pollux)
-
-Acquiring Credentials:
-* please ***reach out over the `hpca2024ae hotcrp` site to coordinate with the authors and chair in order to retrieve VPN access and credentials*** for the aforementioned servers (username: sgupta password: ***provided upon request by AE chairs or authors*** )
-
-Creating an Online ID && Account:
-* Navigate to the [my\_identity](https://myidentity.ku.edu/setup/login) portal
-* use the provided emplid (from hotcrp) and provide DOB to set up challenge questions and a password. Once setup, let us know and the account will be added to the vpn pool for internal server access
-
-Connecting to the VPN:
-* the [Cisco AnyConnect VPN client](https://drive.google.com/drive/folders/1mLl8bhqwmX3Okgn2Cl-WAQ09oenTv0bb) is used to gain internal access to the network on which the servers can be accessed (installers for Windows Linux and MacOS are provided at the link)
-(1) Open the AnyConnect client once installation is complete.
-(2) Enter `kuanywhere.ku.edu` for the address.
-(3) Enter the Online ID and Password (acquired from HPCA2024 AE Chair Siddharth Gupta or the authors), leaving your group as default. 
-In the case that the account requires MFA (Multi-Factor Authentication), follow the MFA-specific step below
-(MFA) Install the [Duo Mobile authentication app](https://play.google.com/store/apps/details?id=com.duosecurity.duomobile&hl=en_US&gl=US&pli=1) and follow the [Duo mobile authentication first-time-setup instructions](https://kuit.service-now.com/kb?sys_kb_id=9d018174db43d744959e9434db961990&id=kb_article_view&sysparm_rank=1&sysparm_tsqueryId=b771cf641ba235104ccf337e034bcb3b)
-* Repeat Steps (2) and (3) above, but select "DuoAuthentication" from the Group dropdown in the Cisco Mobility Client and authenticate using one of the available authentication options under [Step 3](https://kuit.service-now.com/kb?id=kb_article_view&sysparm_article=KB0013837)
-* please reach out to the authors if there are any further questions regarding accessing our on-premise hosts
+1. Install Cisco AnyConnect VPN client. You can use the following link to request access to download the client for Mac, windows, or Linux. We will give you access immediately after your request.  <Link>
+2. Run Cisco AnyConnect client.
+3. Contact Siddharth Gupta at +41787296208 (siddharth.gupta3@huawei.com) and ask for a temporary password so you use it in the next step. We already talked to Siddharth and he kindly agreed to make himself available at the reviewer's request.
+4. Enter kuanywhere.ku.edu for the address, and hit "connect". ![Cisco AnyConnect Connect Step](/Cisco_VPN_Connect_Instructions/connect.png)
+5. Select Group as "DuoAuthentication"
+Username: sgupta_sta
+Password: hpca2024_AE
+Second Password: [The temporary password that Siddharth Gupta Provides]
+![Cisco AnyConnect Connect Step](/relative/path/to/img.jpg?raw=true "Optional Title")
+6. Now you are connected to the VPN and should be able to SSH to the servers.
 
 Logging in to the servers can be performed over ssh one connected to the VPN:
 ```sh
