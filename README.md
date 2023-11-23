@@ -80,25 +80,16 @@ ssh sgupta@axdimm.ittc.ku.edu
 ```sh
 ssh sgupta@castor.ittc.ku.edu #login to workload generator
 cd /home/n869p538/wrk_offloadenginesupport
-source vars/env.src # set up environment variables
 
-source ${WRK_ROOT}/utils/tests/test_funcs.sh;
-compress_var_file_sizes # max RPS Compression test
-source ${WRK_ROOT}/utils/tests/parse_utils.sh;
-parse_many_multi_file_compress # parse results to stdout (Normalize to http-gzip configuration for RPS comparison in Fig. 12)
-cd ..
+./run_tls.sh # performs max_rps tls test from fig. 11
+			 # prints results to stdout (Normalize to http configuration for RPS comparison in Fig. 11)
+./run_tls_const.sh # performs system resource utilization tls test form fig.11
+			 # prints results to stdout (Normalize to http configuration for RPS comparison in Fig. 11)
 
-compress_var_file_sizes_const # max RPS Compression test
-parse_many_multi_file_compress_const # parse results to stdout (Normalize to accel-gzip to http-gzip for RPS comparison)
-cd ..
-
-multi_many_file_var # max RPS test
-parse_many_multi_file
-cd ..
-
-multi_many_constrps_var_files # tls membw cpu test
-parse_many_multi_file_const
-cd ..
+./run_gzip.sh # performs max_rps nginx gzip server test from fig.12
+			  # prints results to stdout (Normalize to http configuration for RPS comparison in Fig. 11)
+./run_gzip_const.sh # performs system resource utilization nginx gzip server test from fig.12
+			  # prints results to stdout (Normalize to http configuration for RPS comparison in Fig. 12)
 ```
 
 ###### Logging in to the Workload Generator (Castor)
