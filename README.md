@@ -54,17 +54,16 @@ make all
 ```
 
 ### Artifact Evaluation Instructions:
-(1) Install Cisco AnyConnect VPN client. You can use the following link to request access to download the client for Mac, windows, or Linux. We will give you access immediately after your request.  <Link>
-(2) Run Cisco AnyConnect client.
-(3) Contact Siddharth Gupta at +41787296208 (siddharth.gupta3@huawei.com) and ask for a temporary password so you use it in the next step. We already talked to Siddharth and he kindly agreed to make himself available at the reviewer's request.
-(4) Enter kuanywhere.ku.edu for the address, and hit "connect".
-![Cisco AnyConnect Connect Step](/relative/path/to/img.jpg?raw=true "Optional Title")
-(5) Select Group as "DuoAuthentication"
+1. Install Cisco AnyConnect VPN client. You can use the following link to request access to download the client for Mac, windows, or Linux. We will give you access immediately after your request.  <Link>
+2. Run Cisco AnyConnect client.
+3. Contact Siddharth Gupta at +41787296208 (siddharth.gupta3@huawei.com) and ask for a temporary password so you use it in the next step. We already talked to Siddharth and he kindly agreed to make himself available at the reviewer's request.
+4. Enter kuanywhere.ku.edu for the address, and hit "connect". ![Cisco AnyConnect Connect Step](/Cisco_VPN_Connect_Instructions/connect.png)
+5. Select Group as "DuoAuthentication"
 Username: sgupta_sta
 Password: hpca2024_AE
 Second Password: [The temporary password that Siddharth Gupta Provides]
 ![Cisco AnyConnect Connect Step](/relative/path/to/img.jpg?raw=true "Optional Title")
-(6) Now you are connected to the VPN and should be able to SSH to the servers.
+6. Now you are connected to the VPN and should be able to SSH to the servers.
 
 Logging in to the servers can be performed over ssh one connected to the VPN:
 ```sh
