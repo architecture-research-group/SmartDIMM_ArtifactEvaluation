@@ -92,11 +92,6 @@ cd /home/n869p538/wrk_offloadenginesupport
 			  # prints results to stdout (Normalize to http configuration for RPS comparison in Fig. 12)
 ```
 
-###### Logging in to the Workload Generator (Castor)
-* `ssh sgupta@castor.ittc.ku.edu`
-* Credentials provided via hpca2024 AE site
-* After logging in, follow ***Artifact Evaluation*** instructions in the README.md of `/home/n869p538/wrk_offloadenginesupport`
-
 #### SmartDIMM Sensitivity Analysis
 * Corresponds to figure 10 in [SmartDIMM:  In-Memory Acceleration of Upper Layer I/O Protocols Artifact](https://www.hpca-conf.org/2024)<br>
 
