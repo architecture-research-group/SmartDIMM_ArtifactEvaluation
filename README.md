@@ -63,7 +63,7 @@ make all
 Username: sgupta_sta
 Password: hpca2024_AE
 Second Password: [The temporary password that Siddharth Gupta Provides] 
-<img src="/Cisco_VPN_Connect_Instructions/connect.png" width=200/>
+<img src="/Cisco_VPN_Connect_Instructions/connect_annot.png" width=200/>
 - Alternatively: type "push" into the Second Password field and notify Siddharth Gupta
 6. Now you are connected to the VPN and should be able to SSH to the servers.
 
