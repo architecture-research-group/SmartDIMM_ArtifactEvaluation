@@ -56,7 +56,7 @@ make all
 ### Artifact Evaluation Instructions:
 1. Install Cisco AnyConnect VPN client. You can use the following [link](https://drive.google.com/drive/folders/1mLl8bhqwmX3Okgn2Cl-WAQ09oenTv0bb?usp=drive_link) to request access to download the client for Mac, windows, or Linux. We will give you access immediately after your request.
 2. Run Cisco AnyConnect client.
-3. Contact Siddharth Gupta at +41787296208 (siddharth.gupta3@huawei.com) and ask for a temporary password so you use it in the next step. We already talked to Siddharth and he kindly agreed to make himself available at the reviewer's request.
+3. Contact SmartDIMM authors over hotcrp site to ask for a temporary password so you use it in the next step. We will do our best to make ourselves available at the reviewer's request.
 4. Enter kuanywhere.ku.edu for the address, and hit "connect". 
 <img src="/Cisco_VPN_Connect_Instructions/connect_init.png" width=200/>
 5. Select Group as "DuoAuthentication"
